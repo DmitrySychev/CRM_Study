@@ -35,7 +35,7 @@ class MailboxContainer extends React.Component{
   }
 
   clickHandler = () => {
-    setTimeout(() => this.componentDidMount(), 10000)
+    // setTimeout(() => this.componentDidMount(), 10000)
     
   }
 

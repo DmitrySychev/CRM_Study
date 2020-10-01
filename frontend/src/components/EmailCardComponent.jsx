@@ -43,7 +43,7 @@ class EmailCardComponent extends React.Component {
               </Grid.Column>
 
               <Grid.Column textAlign='right'>
-                  <p>{this.props.email.date.split('T')[0]}</p>
+                  <p>{this.props.email.created_at.split('T')[0]}</p>
               </Grid.Column>
           </Grid.Row>
       </Grid>

@@ -1,6 +1,6 @@
 import React from 'react'
-import { Table, Container } from 'semantic-ui-react'
-import InventoryContainerBottom from '../containers/InventoryContainerBottom';
+import { Table } from 'semantic-ui-react'
+
 
 
 
@@ -11,9 +11,6 @@ class NewInventoryListComponent extends React.Component{
     clicked: false
   }
 
-  renderBottom=() => {
-    return <InventoryContainerBottom car={this.props.inventory}/>
-  }
 
 
     render(){
@@ -21,7 +18,7 @@ class NewInventoryListComponent extends React.Component{
 
 
               <Table.Row>
-                <Table.Cell><Container fluid onClick={this.renderBottom}>{this.props.inventory.make_model}</Container></Table.Cell>
+                <Table.Cell>{this.props.inventory.make_model}</Table.Cell>
                 <Table.Cell>{this.props.inventory.year}</Table.Cell>
                 <Table.Cell>{this.props.inventory.mileage}</Table.Cell>
                 <Table.Cell>$ {this.props.inventory.price}</Table.Cell>
