@@ -41,7 +41,6 @@ class App extends React.Component{
   }
 
   clickHandler=(data)=>{
-    console.log(data)
     this.setState({ clientId: data, activeItem: 'Client/:id' })
     
   }

@@ -34,7 +34,7 @@ initialState = (resData) => {
 }
 
 componentDidMount() {
-  fetch('http://localhost:8000/clients/')
+  fetch('/clients/')
     .then(res => res.json())
     .then(this.initialState)
 }

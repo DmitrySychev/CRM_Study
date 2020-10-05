@@ -78,7 +78,6 @@ class TextComponent extends React.Component{
   }
 
   render() {
-    console.log(this.state)
     const { body } = this.state
       return (
           <Form onSubmit={this.handleSubmit}>

@@ -56,7 +56,6 @@ clientClickHandler=(data)=>{
 
 
 render(){
-  // console.log(this.props)
     return(
       this.state.clientId ? 
       <ClientComponent deletePrompt={this.props.deletePrompt} />
