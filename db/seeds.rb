@@ -17,6 +17,7 @@ NewInventory.destroy_all
 ClientNewInventory.destroy_all
 Communication.destroy_all
 Message.destroy_all
+Email.destroy_all
 
 
 
@@ -114,13 +115,19 @@ end
 options = ['Phone Call', 'Email', 'Meeting', 'Chat', 'SMS']
 
 300.times do
-    Communication.create(client_id: Client.all.sample.id, category: options.sample, content: Faker::TvShows::VentureBros.quote, date: Faker::Date)
+    Communication.create(client_id: Client.all.sample.id, category: options.sample, content: Faker::Hipster.sentence, date: Faker::Date)
 end
 
 300.times do
     @user = User.all.sample.id
     @client = Client.all.sample.id
     options = [@user, @client]
-    Message.create(body: Faker::TvShows::VentureBros.quote, user_id: @user, client_id: @client, to: options.sample, from: options.sample, )
+    Message.create(body: Faker::Hipster.sentence, user_id: @user, client_id: @client, to: options.sample, from: options.sample, )
+end
+
+300.times do
+    @user = User.all.sample.id
+    @client = Client.all.sample.id
+    Email.create(body: Faker::Hipster.paragraph, subject: Faker::Hipster.sentence, user_id: @user, client_id: @client, to: "crm.study.project@gmail.com", from: Faker::Internet.email, address: 'crm.study.project@gmail.com')
 end
 
