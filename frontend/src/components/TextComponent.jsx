@@ -36,7 +36,8 @@ class TextComponent extends React.Component{
     }
 
   componentDidMount(){
-    setInterval(this.fetchTexts, 10000)
+    this.fetchTexts()
+    // setInterval(this.fetchTexts, 10000)
   }
 
 
