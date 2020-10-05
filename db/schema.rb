@@ -86,8 +86,8 @@ ActiveRecord::Schema.define(version: 2020_09_25_144522) do
     t.text "address"
     t.integer "user_id"
     t.integer "client_id"
-    t.integer "to"
-    t.integer "from"
+    t.text "to"
+    t.text "from"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
