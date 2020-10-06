@@ -28,46 +28,48 @@ render() {
   return (
 
 <> 
-<Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle' columns={5} divided>
+<Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle' >
   <Grid.Column style={{ maxWidth: 450 }}>
  
       <Image src={Logo} size='medium' centered/> 
  
-    <Form size='large' onSubmit={this.submitHandler}>
-            <Form.Input 
-            fluid 
-            icon='user' 
-            iconPosition='left' 
-            placeholder='Username'
-            onChange={this.changeHandler}
-            value={this.state.username} 
-            name='username'
-          />
+    <Segment stacked>
+      <Form size='large' onSubmit={this.submitHandler}>
+              <Form.Input 
+              fluid 
+              icon='user' 
+              iconPosition='left' 
+              placeholder='Username'
+              onChange={this.changeHandler}
+              value={this.state.username} 
+              name='username'
+            />
 
-          <Form.Input
-            fluid
-            icon='lock'
-            iconPosition='left'
-            placeholder='Password'
-            type='password'
-            onChange={this.changeHandler}
-            value={this.state.password}
-            name='password'
-          />
-              <Grid.Column width='3'>
-                <Button color='grey' fluid size='large' type='submit' disabled>
-                    Login
-                 </Button>
-              </Grid.Column>
+            <Form.Input
+              fluid
+              icon='lock'
+              iconPosition='left'
+              placeholder='Password'
+              type='password'
+              onChange={this.changeHandler}
+              value={this.state.password}
+              name='password'
+            />
+                <Grid.Column width='3'>
+                  <Button color='grey' fluid size='large' type='submit' disabled>
+                      Login
+                  </Button>
+                </Grid.Column>
 
-              <hr></hr>
+                <hr></hr>
 
-              <Grid.Column width='3'>
-                <Button fluid size='large' color='grey' type='submit' as={NavLink} to={"/dashboard"}>
-                    Demo
-                </Button>
-              </Grid.Column>
-            </Form>    
+                <Grid.Column width='3'>
+                  <Button fluid size='large' color='grey' type='submit' as={NavLink} to={"/dashboard"}>
+                      Demo
+                  </Button>
+                </Grid.Column>
+              </Form>   
+            </Segment> 
   </Grid.Column>
 </Grid>
 
@@ -76,3 +78,6 @@ render() {
 }}
 
 export default LoginForm
+
+
+
