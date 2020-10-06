@@ -11,8 +11,8 @@
 
 
  - Cient info 
-  - Name, Address, Phone, Email
-  - Owned Vehicles (past/present/initerested in)
+    - Name, Address, Phone, Email
+    - Owned Vehicles (past/present/initerested in)
 
 
 - Abillity to interact with client through chat, email, sms
