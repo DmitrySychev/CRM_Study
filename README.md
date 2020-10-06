@@ -1,6 +1,8 @@
  CRM / Client Management / Lead Management for Automotive
 
- https://crm-study.herokuapp.com/
+ Visit the site - https://crm-study.herokuapp.com/
+
+ Video Demo - https://youtu.be/1Q_95evLhZ0
 
 
  - Cient info 
