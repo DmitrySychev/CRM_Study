@@ -4,7 +4,7 @@
 
  Video Demo - https://youtu.be/1Q_95evLhZ0
 
-*For best experience please use the demo on a desktop*
+*For best experience please visit the site on a desktop*
 
 ---------------------------------------
 
