@@ -34,8 +34,12 @@
 
 Tech
 
+---
+
 - React Frontend
 - Rails API Backend
 - Postgres Database
 - Semantic UI React
 - Twilio API for SMS communication
+
+---
